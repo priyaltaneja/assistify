@@ -10,7 +10,7 @@ app=Flask(__name__)
 CORS(app)
 
 api_key = os.getenv("COHERE_API_KEY")
-print(f"API Key: {api_key}")  # Check if the API key is being fetched
+print(f"API Key: {api_key}")  
 co = cohere.Client(api_key)
 
 @app.route('/')
